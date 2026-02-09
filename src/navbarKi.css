@@ -1,0 +1,37 @@
+.fullNavbar {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  height: 80px;
+}
+
+
+.buttonIcon{
+  color: white !important;
+  font-size: 17px !important;
+ 
+}
+
+.contactButton {
+  background-color: white !important;
+  color: black !important;
+  width: px;
+  border-radius: 10px;
+
+  padding: 6px 16px;
+  font-weight: 600;
+
+  display: inline-block;   /* IMPORTANT */
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10;
+  padding-left: 24px;
+  padding-right: 24px !;
+ 
+}
+
+nav {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.buttonPadding{
+  padding-right: 30px !important;
+}

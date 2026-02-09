@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './navbarKi.css';
+
+import Home from './Home.jsx';
+import About from './About.jsx';
+import Education from './Education.jsx';
+import Skill from './Skill.jsx';
+import Project from './Project.jsx';
+import Contact from './Contact.jsx';
+import Collaborate from './Collaborate.jsx';
+import Footer from './Footer.jsx';
+import HeaderNavbar from './HeaderNavbar.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const mainButtons = [
+    "Home",
+    "About",
+    "Education",
+    "Skills",
+    "Projects",
+    "Contact",
+    "Resume"
+  ];
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <HeaderNavbar buttons={mainButtons} />
+      <Home />
+      <About />
+      <Education />
+      <Skill />
+      <Project />
+      <Contact />
+      <Collaborate />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

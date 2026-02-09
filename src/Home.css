@@ -1,0 +1,189 @@
+.homeDiv {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #050505;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    radial-gradient(circle at top, rgba(9, 8, 8, 0.15), transparent 70%);
+ background-size: 60px 60px;
+background-position: center;
+}
+
+
+.Gouarvname{
+ font-size: 90px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  margin: 0;
+  line-height: 1.1;
+}
+.fullStack{
+ font-size: 55px;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.text{
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+
+  text-align: center;
+  max-width: 850px;
+
+  line-height: 1.6;
+}
+.opportunityBadge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 28px;
+  border-radius: 50px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.05);
+
+  margin-bottom: 40px;
+}
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+
+  background: #00ff99;
+
+  box-shadow: 0px 0px 10px rgba(0, 255, 153, 0.6);
+}
+.buttonGroup {
+  display: flex;
+  gap: 25px;
+  margin-top: 50px;
+}
+.btnPrimary {
+  background: white;
+  color: black;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  padding: 18px 45px;
+  border: none;
+  border-radius: 18px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  transition: 0.3s ease;
+}
+.btnPrimary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3);
+}
+.arrow {
+  font-size: 22px;
+  font-weight: bold;
+}
+.btnSecondary {
+  background: rgba(0, 0, 0, 0.05);
+  color: white;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  padding: 18px 55px;
+  border-radius: 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+.btnSecondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-3px);
+}
+.statsSection {
+  display: flex;
+  gap: 35px;
+  margin-top: 70px;
+
+  justify-content: center;
+  align-items: center;
+}
+.statCard {
+  width: 320px;
+  height: 170px;
+  background: linear-gradient(to bottom right, #111111, #0b0b0b);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+
+  transition: 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-6px);
+
+  background: linear-gradient(
+    to bottom right,
+    #1a1a1a,
+    #0f0f0f
+  );
+}
+
+.statCard:hover {
+  transform: translateY(-6px);
+
+  background: linear-gradient(
+    to bottom right,
+    #1a1a1a,
+    #0f0f0f
+  );
+}
+.statCard h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: white !important;
+  margin: 0;
+}
+.statCard h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: white !important;
+
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+.statCard h1,
+.statCard h3,
+.statCard p {
+  color: white !important;
+}
