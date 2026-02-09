@@ -1,6 +1,12 @@
 .fullNavbar {
   background: linear-gradient(to right, #0f0f0f, #1a1a1a);
-  height: 80px;
+  height: 60px;
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  
 }
 
 

@@ -1,5 +1,12 @@
 import "./Footer.css";
 function Footer(){
+
+  const scrollToSection = (id) => {
+  document.getElementById(id).scrollIntoView({
+    behavior: "smooth"
+  });
+};
+
     return(
         <>
         <footer class="footer">
@@ -15,11 +22,22 @@ function Footer(){
     <div class="footer-col">
       <h3 className="footerButton">Quick Links</h3>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Education</li>
-        <li>Skills</li>
-        <li>Projects</li>
+       <li onClick={() => scrollToSection("home")}>
+  Home
+</li>
+
+        <li onClick={() => scrollToSection("about")}>
+  About
+</li>
+         <li onClick={() => scrollToSection("education")}>
+ Education
+</li>
+       <li onClick={() => scrollToSection("skills")}>
+ Skills
+</li>
+        <li onClick={() => scrollToSection("project")}>
+  Project
+</li>
       </ul>
     </div>
 

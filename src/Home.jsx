@@ -2,7 +2,7 @@ import './Home.css'
 function Home(){
     return(
         <>
-        <div className="homeDiv">
+        <div id='home' className="homeDiv">
            <div className="opportunityBadge">
   <span className="dot"></span>
   Available for Opportunities

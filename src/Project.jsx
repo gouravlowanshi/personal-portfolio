@@ -3,7 +3,7 @@ import "./Project.css";
 function Project() {
   return (
     <>
-      <section className="projects-section">
+      <section id="projects" className="projects-section">
 
         <div className="projects-header">
           

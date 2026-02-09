@@ -18,7 +18,7 @@ function App() {
     "Skills",
     "Projects",
     "Contact",
-    "Resume"
+   
   ];
 
   return (

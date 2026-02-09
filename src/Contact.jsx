@@ -1,8 +1,11 @@
 import "./Contact.css";
 function Contact(){
+
+  
+
     return(
         <>
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
   <div className="contact-header">
     <span className="line"></span>
     <p className="Contact-color">CONTACT</p>
