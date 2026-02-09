@@ -1,4 +1,5 @@
 import './navbarKi.css';
+import "./responsive.css";
 
 import Home from './Home.jsx';
 import About from './About.jsx';
@@ -11,6 +12,9 @@ import Footer from './Footer.jsx';
 import HeaderNavbar from './HeaderNavbar.jsx';
 
 function App() {
+  let frontendSkill = ["HTMl", "CSS" , "javascript" , "React" , "Tailwind CSS" , "Bootstrap CSS"];
+  let tools = ["Git", "Github" , "VS Code", "Intellij IDEA" , "Postman" ];
+  let backendSkill = ["Core Java" , "Advanced Java" ,"Spring Boot" , "MySQL" , "Microservices Architecture" , "Hibernate"]
   const mainButtons = [
     "Home",
     "About",
@@ -27,7 +31,11 @@ function App() {
       <Home />
       <About />
       <Education />
-      <Skill />
+      <Skill
+       frontendSkill={frontendSkill}
+        backendSkill={backendSkill}
+        tools={tools}
+      />
       <Project />
       <Contact />
       <Collaborate />

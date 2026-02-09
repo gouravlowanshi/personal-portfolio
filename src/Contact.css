@@ -129,4 +129,48 @@ body {
 }
 .info{
     cursor: pointer;
+    text-decoration: none;
+    
+}
+a {
+  text-decoration: none;
+}
+
+.resume-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.resume-buttons .action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 44px;
+
+  background: #111;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: all 0.25s ease;
+}
+
+.resume-buttons .action:hover {
+  background: #1a1a1a;
+  transform: translateY(-2px);
+}
+.cta {
+  text-decoration: none;
+  color: inherit;
+}
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
 }

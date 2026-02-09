@@ -4,7 +4,7 @@
   color: #fff;
 }
 
-/* Header */
+
 .projects-header {
   display: flex;
   align-items: center;
@@ -24,20 +24,19 @@
   color: #9a9a9a;
 }
 
-/* Title */
 .projects-section h2 {
   font-size: 56px;
   font-weight: 700;
   margin-bottom: 70px;
 }
 
-/* 🔥 CENTER FIX */
+
 .projects-grid {
   display: flex;
   justify-content: center;
 }
 
-/* Card */
+
 .project-card {
   max-width: 520px;
   width: 100%;
@@ -54,7 +53,7 @@
   transform: translateY(-8px);
 }
 
-/* Icon */
+
 .project-icon {
   width: 64px;
   height: 64px;
@@ -67,7 +66,7 @@
   font-size: 26px;
 }
 
-/* Text */
+
 .project-card h3 {
   font-size: 28px;
   margin-bottom: 16px;
@@ -80,7 +79,6 @@
   margin-bottom: 32px;
 }
 
-/* Tags */
 .tech-tags {
   display: flex;
   gap: 14px;
@@ -128,7 +126,7 @@
   align-items: center;
   justify-content: center;
 
-  margin: 0 auto 30px;   /* 🔥 THIS IS THE KEY */
+  margin: 0 auto 30px;   
   font-size: 26px;
 }
 .Personal-portfolio {

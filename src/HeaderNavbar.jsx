@@ -1,50 +1,41 @@
 import FrontGouravLogo from "./Gourav";
 
-function HeaderNavbar(props) {
+function HeaderNavbar({ buttons }) {
 
-  // ✅ EK hi function sab ke liye
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary navbarHeight">
-        <div className="container-fluid fullNavbar px-0">
+    <nav className="navbar navbar-expand-lg custom-navbar">
+      <div className="container-fluid px-4">
 
-          <FrontGouravLogo />
+        {}
+        <FrontGouravLogo />
 
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+        {}
+        
 
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-
-              {props.buttons.map((btn, index) => (
-                <a
-                  key={index}
-                  className="nav-link buttonIcon buttonPadding"
-                  style={{ cursor: "pointer" }}
-                  onClick={() => scrollToSection(btn.toLowerCase())}
-                >
-                  {btn}
-                </a>
-              ))}
-
-            </div>
+        {}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="navbar-nav ms-auto">
+            {buttons.map((btn, index) => (
+              <span
+                key={index}
+                className="nav-link custom-link"
+                onClick={() => scrollToSection(btn.toLowerCase())}
+              >
+                {btn}
+              </span>
+            ))}
           </div>
         </div>
-      </nav>
-    </>
+
+      </div>
+    </nav>
   );
 }
 

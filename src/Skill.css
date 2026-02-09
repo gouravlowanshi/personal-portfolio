@@ -100,7 +100,7 @@
 }
 .skill-card {
     position: relative;
-    height: 360px; 
+    height: 400px; 
     background: linear-gradient(145deg, #0b0b0b, #050505);
     border-radius: 26px;
     padding: 36px 32px;
@@ -196,4 +196,27 @@
     background: #111;
     border-color: rgba(255,255,255,0.25);
     transform: translateY(-2px);
+}
+
+.skill-card {
+    position: relative;
+    height: auto;       
+    overflow: visible;  
+}
+.skill-card::after {
+  pointer-events: none;
+}
+.dsa-btn-wrapper {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
 }

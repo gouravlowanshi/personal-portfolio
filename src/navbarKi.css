@@ -1,43 +1,58 @@
-.fullNavbar {
-  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
-  height: 60px;
-   position: fixed;
+/* ===== NAVBAR BASE ===== */
+.custom-navbar {
+  position: fixed !important ;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
-  
+  height: 65px;
+
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  z-index: 9999;
 }
 
-
-.buttonIcon{
-  color: white !important;
-  font-size: 17px !important;
- 
+/* Logo (agar text logo hai) */
+.custom-navbar .logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.contactButton {
-  background-color: white !important;
-  color: black !important;
-  width: px;
-  border-radius: 10px;
-
-  padding: 6px 16px;
-  font-weight: 600;
-
-  display: inline-block;   /* IMPORTANT */
-  text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10;
-  padding-left: 24px;
-  padding-right: 24px !;
- 
+/* Nav links */
+.custom-link {
+  color: #fff !important;
+  font-size: 16px;
+  margin-right: 28px;
+  cursor: pointer;
 }
 
-nav {
-  margin: 0 !important;
-  padding: 0 !important;
+/* Remove bootstrap hover color */
+.custom-link:hover {
+  color: #fff !important;
 }
-.buttonPadding{
-  padding-right: 30px !important;
+
+/* Hamburger button */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Hamburger icon white */
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Mobile dropdown background */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: #000;
+    padding: 12px 0;
+  }
+
+  .custom-link {
+    margin: 12px 0;
+    text-align: center;
+  }
 }

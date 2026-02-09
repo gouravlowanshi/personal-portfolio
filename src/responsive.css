@@ -1,0 +1,39 @@
+
+
+@media (max-width: 768px) {
+
+  section {
+    padding: 60px 20px;
+  }
+
+  h1, h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .skills-grid,
+  .projects-grid,
+  .contact-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+
+  .action,
+  .dsa-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+
+  img,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
